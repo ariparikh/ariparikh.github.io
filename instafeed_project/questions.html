@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Beauty Aggregator</title>
+  <!-- My custom CSS for questions -->
+  <link rel="stylesheet" href="css/questions.css">
+  <script src="https://instagram-web-auth.firebaseapp.com/instauth.min.js"></script>
+</head>
+
+<body>
+	<h1>Question 1</h1>
+	<p id= "slogan">Day dreaming or Up all night?</p>
+
+  <div class="progress">
+    <div class="progress-bar" role="progressbar" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100" style="width:33%">
+      33%
+    </div>
+  </div>
+
+  <div class="row">
+  <div class="column" id ="day">
+    <img src="css/images/pexels-photo-185801.jpeg" alt="Day" style="width:75%">
+  </div>
+  <div class="column" id ="night">
+    <img src="css/images/pexels-photo-580631.png" alt="Night" style="width:75%">
+  </div>
+</div>
+
+<div class="dropdown" id="day-dropdown" style="display:none">
+<form action="/action_page.php">
+<select name="looks">
+  <option value="smokey eye">Smokey Eye</option>
+  <option value="lip color"> Lip Color</option>
+  <option value="glitter"> Glitter</option>
+</select>
+<input type="submit">
+</form>
+</div>
+
+<div class="dropdown" id="night-dropdown" style="display:none">
+<form action="/action_page.php">
+<select name="looks">
+  <option value="date">Date night</option>
+  <option value="concert"> Concert</option>
+</select>
+<input type="submit">
+</form>
+</div>
+
+<!-- <div id="instafeed" class="row">
+</div> -->
+
+<script>
+  window.InstAuth.init("0e6279239d9f41e5ae0422c6f81e5df1");
+    window.InstAuth.startAuthFlow();
+    var token = window.InstAuth.getAccessToken();
+</script>
+<script type="text/javascript" src="js/instafeed.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/InstAuth.js"></script>
+<script>
+  document.write('<a href="' + document.referrer + '">Go Back</a>');
+</script>
+
+</body>
+
+</html>
