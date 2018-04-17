@@ -46,6 +46,7 @@ _500px.on('authorization_obtained', function() {
 
 $(document).on('click', '.image', function () {
   $('.image').hide()
+  $('#store-list-step').show()
   $(this).show()
   navigator.geolocation.getCurrentPosition(handleResponse)
 })
@@ -73,34 +74,39 @@ function buildMap(latitude, longitude) {
 
 var stores = [
   {
-    lat: 40.7408075,
-    lng: -74.059671,
+    lat: 40.734924,
+    lng: -73.990784,
+    name: 'MAC Union Square'
+  },
+  {
+    lat: 40.741272, 
+    lng: -73.989502,
     name: 'MAC Flatiron'
   },
   {
-    lat: 40.7502896,
-    lng: -74.0583538,
-    name: 'MAC Macys'
+    lat: 40.754483, 
+    lng:  -73.976070,
+    name: 'MAC Grand Central'
   },
   {
-    lat: 40.7346589,
-    lng: -74.0610496,
-    name:'MAC Broadway'
+    lat: 40.735556, 
+    lng: -74.004536,
+    name:'MAC West Village'
   },
   {
-    lat: 40.7341788,
-    lng: -74.0745633,
-    name: 'MAC Bleecker'
+    lat: 40.723588,
+    lng:  -73.999215,
+    name: 'MAC Soho'
   },
   {
-    lat: 40.7580302,
-    lng: -74.0548835,
-    name: 'MAC Times Square'
+    lat: 40.750644,
+    lng: -73.98835,
+    name: 'MAC 34th St'
   },
   {
-    lat: 40.758032,
-    lng: -74.0470352,
-    name:'MAC 5th Ave'
+    lat: 40.759163, 
+    lng: -73.984825,
+    name:'MAC Times Square'
   },
 ]
 

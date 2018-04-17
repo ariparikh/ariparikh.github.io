@@ -102,3 +102,8 @@ a {
     margin-left: 35%
 }
 
+#store-list-step {
+   display: none;
+   text-align:center;
+   margin-right: 55%;
+}
